@@ -1,8 +1,8 @@
 const initialState = {
   loading: false,
   name: "",
-  totalSupply: 0,
-  cost: 0,
+  currentSupply: 0,
+  
   error: false,
   errorMsg: "",
 };
@@ -17,12 +17,13 @@ const dataReducer = (state = initialState, action) => {
         errorMsg: "",
       };
     case "CHECK_DATA_SUCCESS":
+      console.log("entered check data sucess", action.payload.currentSupply);
       return {
         ...state,
         loading: false,
         name: action.payload.name,
-        totalSupply: action.payload.totalSupply,
-        cost: action.payload.cost,
+        curentSupply: action.payload.curentSupply,
+        
         error: false,
         errorMsg: "",
       };
