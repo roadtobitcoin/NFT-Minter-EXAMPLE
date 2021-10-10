@@ -63,7 +63,7 @@ function App() {
     setFeedback("Minting your Panda NFT here...");
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .buy(blockchain.account, _to)
+      .buy(blockchain.account)
       .send({
         gasLimit: "285000",
         to: "0x85e0eAdBc66EA4d8637d82d04e7b61E471533dA3",
@@ -120,7 +120,7 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "#383838", padding: 24 }}
           >
-            {Number(data.currentSupply) == 10 ? (
+            {Number(data.currentSupply) === 20 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
