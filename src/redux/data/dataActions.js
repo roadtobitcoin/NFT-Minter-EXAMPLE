@@ -33,18 +33,16 @@ export const fetchData = (account) => {
         .getState()
         .blockchain.smartContract.methods.currentSupply()
         .call();
-      let cost = await store
-        .getState()
-        .blockchain.smartContract.methods.cost()
-        .call();
+        console.log("currentSupply", currentSupply);
+      
 
       dispatch(
         fetchDataSuccess({
           name,
-          currentSupply,
-          cost,
+          currentSupply         
         })
       );
+      console.log("currentSupply", currentSupply);
     } catch (err) {
       console.log(err);
       dispatch(fetchDataFailed("Could not load data from contract."));
