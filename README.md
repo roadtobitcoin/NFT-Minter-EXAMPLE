@@ -1,9 +1,11 @@
-# Welcome to NFT Minter 👄
+# Welcome to NFT Minter �
 
 All the code in these repos was created based on explaination by HashLips on the main YouTube channel.
 youtube channel link mentioned below. 
 
 [📺 YouTube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
+
+also you can watch video for reference - https://www.youtube.com/watch?v=OVL7R0eT8jw
 
 first step is to clone the rep by using the rep git clone https://github.com/roadtobitcoin/NFT-Minter-Example.git
 
